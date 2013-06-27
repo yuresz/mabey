@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  .pure-g-r
+    header.header
+      .pure-u-1-8
+          h1 Hoteles Mabey
+      .pure-u-7-8
+          nav
+            ul
+              li
+                a(href='#') Inicio
+              li
+                a(href='#') Nosotros
+  .pure-g-r
+    section.wellcome
+      .pure-u-3-8
+        h1 Hoteles Mabey
+        p asdjflajsfñlajfñlasjfñlsdjaljdsñlsafjsldsjfñlasjfklajskflajsl fñjfklajlfjasdlfjaklfjaljflkfjadl
+        .botones
+          a(href='#') Hotel Mabey Cusco
+          a(href='#') Hotel Mabey Valle Sagrado
+      .pure-u-5-8
+        ul.bxslider
+          li 
+            img(src='http://placehold.it/400x300')
+          li
+            img(src='http://placehold.it/400x300')
+          li
+            img(src='http://placehold.it/400x300')
+          li
+            img(src='http://placehold.it/400x300')
+  .pure-g-r
+    .pure-u-3-8
+    .pure-u-5-8
+
+block js
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+  script(src='/javascripts/jquery.bxslider/jquery.bxslider.min.js')
+  script(src='/javascripts/mabey.js')
+
+block css
+  link(rel='stylesheet', href='/javascripts/jquery.bxslider/jquery.bxslider.css')
