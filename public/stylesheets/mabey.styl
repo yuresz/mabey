@@ -1,7 +1,67 @@
-@import url(http://fonts.googleapis.com/css?family=Lato)
-lato='Lato', sans-serif
+Lato='Lato', sans-serif
+my-shadow = 1px 1px 1px rgba(0,0,0,0.6)
+
+// Colors
+my-black = #383838
+cusco = #b05336
+cusco-light = #c57a63
+valle = #6e7f4d
+valle-light = #a2b67b
+
+// Flat Colors
+@import 'colors.styl'
+
+@import url('http://fonts.googleapis.com/css?family=Lato')
+
+body
+  font-family Lato
+
+.wrapper
+  width 70%
+  margin 0 auto
 
 .header
-    background #383838
-.wellcome
-    background #d3a44a
+  background my-black
+
+.footer
+  background clouds
+  border-top 5px solid silver
+  color asbestos
+
+  h3
+    color my-black
+    text-shadow 1px 1px 1px solid white
+
+  address
+    font-size 14px
+    line-height 1.5em
+
+  /*.quick-contact
+    background asbestos
+    color #fff
+    padding 0 10px*/
+
+.footer-last
+  background silver
+  color concrete
+  font-size 14px
+  padding-top 20px
+  padding-bottom 20px
+
+  a
+    color concrete
+    text-decoration none
+
+    &:hover
+      color midnight-blue
+
+
+.text-center
+  text-align center
+
+.text-right
+  text-right right
+
+@import 'menus.styl'
+@import 'front.styl'
+@import 'mq.styl'
